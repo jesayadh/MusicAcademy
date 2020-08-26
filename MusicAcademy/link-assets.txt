@@ -1,0 +1,4 @@
+band1 https://www.flaticon.com/free-icon/band_767455?term=band%20music&page=1&position=1
+band2 https://www.flaticon.com/free-icon/band_767461?term=band%20music&page=1&position=3
+videotutorial https://www.flaticon.com/free-icon/video-tutorial_2083308?term=video%20tutorial&page=1&position=33
+videoconference https://www.flaticon.com/free-icon/video-call_2846056?term=video%20conference&page=1&position=21

@@ -1,0 +1,261 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: montserrat;
+    scroll-behavior: smooth;
+}
+
+header{
+    background: black;
+    height: 80px;
+    width: 100%;
+    border-bottom: 5px solid white;
+    top: 0;
+    position: sticky;
+    z-index: 100;
+}
+
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 30px;
+    font-weight: bold;
+}
+
+header ul{
+    float: right;
+    margin-right: 20px;
+}
+
+header ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+header ul li a{
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 10px;
+}
+
+header a.active, header a:hover{
+    background: white;
+    color: black;
+    transition: .9s;
+}
+
+.navbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+main{
+    background: black;
+    /* width: 100%;
+    height: 500px; */
+}
+
+#Beranda{
+    display: flex;
+    margin: auto;
+    width: 90%;
+    min-height: 90vh;
+    align-items: center;
+}
+
+.Gambar{
+    flex: 2;
+}
+
+.tulisan{
+    flex: 1;
+    color: white;
+}
+
+.tulisan h1{    
+    font-size: 40px;
+}
+
+.Gambar img{
+    height:50vh;
+}
+
+#Fitur{
+    width: 100%;
+    min-height: 90vh;
+    background: white;
+    align-items: center;
+    text-align: center;
+}
+
+#Fitur h1{
+    padding-top: 80px;
+    font-size: 40px;
+}
+
+.fiturr{
+    display: flex;
+    align-items: center;
+}
+
+.fitur1,.fitur2,.fitur3{
+    flex: 1;
+    height: 40vh;
+    border-radius: 50px;
+    border: 2px solid black;
+    background: black;
+    margin: 55px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+#Fitur h2{
+    color: white;
+}
+
+#Fitur p{
+    color: white;
+    margin: 20px;
+    margin-bottom: 20px;
+}
+
+#Biodata{
+    align-items: center;
+    display: flex;
+    min-height: 90vh;
+}
+
+.foto{
+    background: url(assets/jdh.jpg) no-repeat;
+    width: 135px;
+    height: 135px;
+    border-radius: 100px;
+    background-size: auto;
+    margin: auto;
+}
+
+.data{
+    padding: 50px;
+    margin: auto;
+    background: white;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.data h1{
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.data h3{
+    padding-top: 10px;
+}
+
+.data h4{
+    padding-bottom: 10px;
+}
+
+.foot{
+    width: 100%;
+    min-height: 30px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+@media (max-width:1300px){
+    .Gambar img{
+        height: 40vh;
+    }
+    
+    .fitur1,.fitur2,.fitur3{
+        margin: 40px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width:1024px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 30px;
+    }
+    header ul li a{
+        font-size: 16px;
+    }
+    .Gambar img{
+        height: 30vh;
+    }
+    .tulisan h1{
+        font-size: 30px;
+    }
+    .fitur1,.fitur2,.fitur3{
+        margin: 10px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width:858px){
+    .navbtn{
+        display: block;
+    }
+    header ul{
+        position: fixed;
+        width: 100%;
+        height: 260px;
+        background: black;
+        top: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    header ul li{
+        display: block;
+    }
+    header ul li a{
+        font-size: 20px;
+    }
+    header a:hover, header a.active{
+        background: none;
+        color: grey;
+        transition: .5s;
+    }
+    #check:checked ~ ul{
+        top: 80px;
+    }
+    #Beranda{
+        flex-direction: column;
+        text-align: center;
+    }
+    .Gambar img{
+        margin-top: 100px;
+    }
+    .fiturr{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:500px){
+    .Gambar img{
+        height: 25vh;
+    }
+}

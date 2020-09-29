@@ -1,2 +1,2 @@
 # MusicAcademy
-ResponsiveWeb
+Responsive Simple Website
